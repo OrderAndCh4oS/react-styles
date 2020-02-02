@@ -1,0 +1,139 @@
+
+.border_bottom {
+    border-bottom: $border;
+    padding-bottom: $gutter;
+    margin-bottom: $gutter;
+
+    &.border_tight {
+        padding-bottom: $gutter--half;
+        margin-bottom: $gutter--half;
+    }
+
+    &.border_loose {
+        padding-bottom: $gutter--double;
+        margin-bottom: $gutter--double;
+    }
+}
+
+.border_top {
+    border-top: $border;
+    padding-top: $gutter;
+    margin-top: $gutter;
+
+    &.border_tight {
+        padding-top: $gutter--half;
+        margin-top: $gutter--half;
+    }
+
+    &.border_loose {
+        padding-top: $gutter--double;
+        margin-top: $gutter--double;
+    }
+}
+
+.border_left {
+    border-left: $border;
+    padding-left: $gutter;
+
+    &.border_tight {
+        padding-left: $gutter--half;
+    }
+
+    &.border_loose {
+        padding-left: $gutter--double;
+    }
+}
+
+.border_right {
+    border-right: $border;
+    padding-right: $gutter;
+
+    &.border_tight {
+        padding-right: $gutter--half;
+    }
+
+    &.border_loose {
+        padding-right: $gutter--double;
+    }
+}
+
+.border_top_none {
+    border-top: 0;
+}
+
+.border_right_none {
+    border-right: 0;
+}
+
+.border_bottom_none {
+    border-bottom: 0;
+}
+
+.border_left_none {
+    border-left: 0;
+}
+
+.border_none {
+    border: 0;
+}
+
+.border_thick {
+    border-width: $border--width--thick;
+}
+
+.border_thicker {
+    border-width: $border--width--thicker;
+}
+
+.border_thickest {
+    border-width: $border--width--thickest;
+}
+
+
+.borderRadius {
+    border-radius: $border--radius;
+}
+
+.borderRadius_top {
+    border-top-left-radius: $border--radius;
+    border-top-right-radius: $border--radius;
+}
+
+.borderRadius_right {
+    border-top-right-radius: $border--radius;
+    border-bottom-right-radius: $border--radius;
+}
+
+.borderRadius_bottom {
+    border-bottom-right-radius: $border--radius;
+    border-bottom-left-radius: $border--radius;
+}
+
+.borderRadius_left {
+    border-top-left-radius: $border--radius;
+    border-bottom-left-radius: $border--radius;
+}
+
+.borderRadius_flat {
+    border-radius: 0;
+}
+
+.borderRadius_top_flat {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.borderRadius_right_flat {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.borderRadius_bottom_flat {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.borderRadius_left_flat {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}

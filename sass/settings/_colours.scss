@@ -1,0 +1,74 @@
+$color--white: #fcfcfc;
+$color--lightest-grey: #eeeeee;
+$color--lighter-grey: #dfdfdf;
+$color--light-grey: #c4c4c4;
+$color--grey: #808080;
+$color--dark-grey: #525252;
+$color--darker-grey: #414141;
+$color--darkest-grey: #363636;
+$color--black: #1c1c1c;
+
+$color--green: #35c13a;
+$color--lighter-green: #3be541;
+$color--red: #c62d32;
+$color--lighter-red: #ee393c;
+
+$color--primary: $color--black;
+
+$color--primary--hover: $color--grey;
+
+$color--secondary: $color--dark-grey;
+
+$color--secondary--hover: $color--light-grey;
+
+$color--error: $color--red;
+
+$color--error--hover: $color--lighter-red;
+
+$color--valid: $color--green;
+
+$color--valid--hover: $color--lighter-green;
+
+$colors: "black" $color--black,
+"darkestGrey" $color--darkest-grey,
+"darkerGrey" $color--darker-grey,
+"darkGrey" $color--dark-grey,
+"grey" $color--grey,
+"lightGrey" $color--light-grey,
+"lighterGrey" $color--lighter-grey,
+"lightestGrey" $color--lightest-grey,
+"white" $color--white,
+"green" $color--green,
+"red" $color--red,
+"lighterGreen" $color--lighter-green,
+"lighterRed" $color--lighter-red,
+"primary" $color--primary,
+"secondary" $color--secondary,
+"error" $color--error,
+"valid" $color--valid "transparent" transparent;
+
+$body--bk-color: $color--white;
+
+$wrapper--bk-color: $color--white;
+
+$header--color: $color--black;
+
+$text--color: $color--darker-grey;
+
+$text--color-light: $color--light-grey;
+
+$link--color: $color--dark-grey;
+
+$link--color--hover: $color--darkest-grey;
+
+$button--color: $color--white;
+
+$button--color--hover: $color--white;
+
+$button--bk-color: $color--primary;
+
+$button--bk-color--hover: $color--primary--hover;
+
+$button--color--disabled: $color--lighter-grey;
+
+$button--bk-color-disabled: $color--light-grey;

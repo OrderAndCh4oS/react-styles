@@ -1,0 +1,143 @@
+// Todo: Add .button_icon-left and .button_icon-right
+
+/**
+ * @atom Button
+ * @section Elements > Buttons
+ * @modifiers
+ *  .button_active The active state of the button
+ *  .button_disabled The disabled state of the button
+ *  .button_affirmative An encouraging button
+ *  .button_destructive A dangerous button
+ * @markup
+ *  <button class="button">
+ *    A button
+ *  </button>
+ *  <button class="button button--active">
+ *    An active button
+ *  </button>
+ *  <button class="button button--disabled">
+ *    A disabled button
+ *  </button>
+ *  <button class="button button--affirmative">
+ *    An affirmative button
+ *  </button>
+ *  <button class="button button--destructive">
+ *    A destructive button
+ *  </button>
+ */
+.button,
+.button:visited,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  background: $button--bk-color;
+  border: $button--border;
+  color: $button--color;
+  font-weight: $button--font-weight;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: $base-line-height;
+  padding: $button--padding;
+  font-family: $button--font-family;
+  transition: background-color 340ms ease, border-color 340ms ease;
+  border-radius: $button--border-radius;
+  -webkit-appearance: none;
+
+  &.button_active,
+  &:hover,
+  &:focus,
+  &:active {
+    color: $button--color--hover;
+    background: $button--bk-color--hover;
+    border: $button--border--hover;
+    text-decoration: none;
+  }
+
+  &.button_disabled,
+  &:disabled {
+    cursor: default;
+    border: $button--border--disabled;
+    color: $button--color--disabled;
+    background-color: $button--bk-color-disabled;
+
+    &:hover, &:active {
+      cursor: default;
+      border: $button--border--disabled;
+      color: $button--color--disabled;
+      background-color: $button--bk-color-disabled;
+    }
+  }
+
+  &.button_destructive {
+    border-color: $color--error;
+    background-color: $color--error;
+    color: $color--white;
+
+    &:hover {
+      border-color: $color--error--hover;
+      background-color: $color--error--hover;
+    }
+  }
+
+  &.button_affirmative {
+    border-color: $color--valid;
+    background-color: $color--valid;
+    color: $color--white;
+
+    &:hover {
+      border-color: $color--valid--hover;
+      background-color: $color--valid--hover;
+    }
+  }
+}
+
+/**
+ * @atom Switch
+ * @section Elements > Buttons
+ * @modifiers
+ *  .button_switch_on Button toggled on
+ * @markup
+ *  <button class="button--switch"></button>
+ *  <button class="button--switch button--switch--on"></button>
+ */
+button.button_switch {
+  border: none;
+  height: rem-calc(28);
+  width: rem-calc(48);
+  border-radius: rem-calc(16);
+  background-color: $color--red;
+  overflow: hidden;
+  position: relative;
+  transition: background-color 100ms ease-in-out;
+
+  &.button_switch_on {
+    background-color: $color--green;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: rem-calc(26);
+    height: rem-calc(26);
+    background-color: $color--white;
+    top: rem-calc(1);
+    left: rem-calc(1);
+    border-radius: rem-calc(14);
+    transition: left 280ms ease-in-out;
+  }
+
+  &.button_switch_on:after {
+    left: rem-calc(21);
+  }
+}
+
+.button_icon-left {
+  padding-right: $gutter--half;
+}
+
+.button_icon-right {
+  padding-left: $gutter--half;
+}

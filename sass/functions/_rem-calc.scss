@@ -1,0 +1,31 @@
+
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@function convert-to-rem($value) {
+  $value: strip-unit($value) / strip-unit($em-base) * 1rem;
+  @if ($value == 0em) {
+    $value: 0;
+  }
+  // Turn 0em into 0
+  @return $value;
+}
+
+@function rem-calc($values...) {
+  $max: length($values);
+  // Get the total number of parameters passed
+
+  // If there is only 1 parameter, then return it as an integer.
+  // This is done because a list can't be multiplied or divided even if it contains a single value
+  @if $max == 1 {
+    @return convert-to-rem(nth($values, 1));
+  }
+
+  $emValues: ();
+  // This will eventually store the converted $values in a list
+  @for $i from 1 through $max {
+    $emValues: append($emValues, convert-to-rem(nth($values, $i)));
+  }
+  @return $emValues;
+}

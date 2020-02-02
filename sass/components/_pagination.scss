@@ -1,0 +1,49 @@
+/**
+ * Todo: https://wiki.mozilla.org/Accessibility/TableHeaders Investigate solutions for tabulated data lists
+ * @molecule Pagination
+ * @section List > Pagination
+ * @markup
+ *  <nav class="pagination">
+ *    <a href="#" class="pagination--button">&lt;&lt;</a>
+ *    <a href="#" class="pagination--button">&lt;</a>
+ *    <span class="pagination--button pagination--disabled">...</span>
+ *    <a href="#" class="pagination--button">2</a>
+ *    <span class="pagination--button pagination--current">3</span>
+ *    <a href="#" class="pagination--button">4</a>
+ *    <span class="pagination--button pagination--disabled">...</span>
+ *    <a href="#" class="pagination--button">&gt;</a>
+ *    <a href="#" class="pagination--button">&gt;&gt;</a>
+ *  </nav>
+ */
+.pagination {
+  margin-bottom: $gutter--half;
+  display: flex;
+  flex: 1 0 auto;
+  flex-wrap: nowrap;
+
+  .pagination_button {
+    @extend .button;
+    color: $button--color;
+    margin: 0 $gutter--half / 2;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .pagination_current {
+    @extend .button:hover;
+    padding: $button--padding;
+    cursor: default;
+  }
+
+  .pagination_disabled {
+    @extend .button:disabled;
+    padding: $button--padding;
+    cursor: default;
+  }
+}

@@ -1,0 +1,15 @@
+
+$button--padding: rem-calc(5) rem-calc(12) rem-calc(5);
+
+$button--border: $border--width $border--stroke $color--primary;
+
+$button--border--hover: $border--width $border--stroke $color--primary--hover;
+
+
+$button--border-radius: 3px;
+
+$button--border--disabled: $border--width $border--stroke $color--light-grey;
+
+$button--font-family: $font--family;
+
+$button--font-weight: $font--weight--bold;

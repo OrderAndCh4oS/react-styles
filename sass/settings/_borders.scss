@@ -1,0 +1,16 @@
+
+$border--color: $color--light-grey;
+
+$border--width: 1px;
+
+$border--width--thick: $border--width * 2;
+
+$border--width--thicker: $border--width * 3;
+
+$border--width--thickest: $border--width * 4;
+
+$border--stroke: solid;
+
+$border: $border--width $border--stroke $border--color;
+
+$border--radius: 4px;

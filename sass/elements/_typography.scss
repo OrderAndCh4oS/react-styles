@@ -1,0 +1,211 @@
+
+p, ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: $gutter;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $header--color;
+  font-weight: $font--weight--bold;
+  font-family: $font--family;
+  margin-top: 0;
+  margin-bottom: $gutter;
+}
+
+h1, .header-one {
+  font-size: $font--size--five;
+  font-weight: $font--weight--bold;
+  line-height: $font--size--five + $font--leading;
+  margin-bottom: $gutter;
+}
+
+h2, .header-two {
+  font-size: $font--size--four;
+  font-weight: $font--weight--bold;
+  line-height: $font--size--four + $font--leading;
+  margin-bottom: $gutter;
+}
+
+h3, .header-three {
+  font-size: $font--size--three;
+  font-weight: $font--weight--bold;
+  line-height: $font--size--three + $font--leading;
+  margin-bottom: $gutter;
+}
+
+h4, h5, h6,
+.header-four, .header-five, .header-six {
+  font-size: $font--size--one;
+  font-weight: $font--weight--bold;
+  line-height: $font--size--one + $font--leading;
+  margin-bottom: $gutter;
+}
+
+.pretitle {
+  font-size: $font--size--one;
+  line-height: $font--size--one + $font--leading--loose;
+  margin-bottom: 0;
+}
+
+p, .text, .citation {
+  color: $text--color;
+  font-size: $font--size--one;
+  font-weight: $font--weight--regular;
+  font-family: $font--family;
+  line-height: $font--size--one + $font--leading;
+}
+
+.text_intro {
+  font-size: $font--size--two;
+  line-height: $font--size--two + $font--leading;
+}
+
+.text_caption {
+  font-size: $font--size--one;
+  line-height: $font--size--one + $font--leading;
+  font-style: $font--emphasis;
+}
+
+a, a:visited {
+  color: $link--color;
+  outline: 0;
+  text-decoration: $link--decoration;
+}
+
+a:hover, a:focus {
+  color: $link--color--hover;
+  text-decoration: $link--decoration--hover;
+}
+
+p a, p a:visited {
+  line-height: inherit;
+}
+
+menu,
+ol,
+ul {
+  padding: 0;
+}
+
+nav ul,
+nav ol {
+  list-style: none;
+}
+
+strong,
+.text_bold {
+  font-weight: $font--weight--bold;
+}
+
+em,
+.text_italic {
+  font-style: $font--emphasis;
+}
+
+blockquote, .blockquote {
+  margin: 0 0 $gutter;
+  padding: 0 $gutter;
+  border-left: $border--width--thicker $border--stroke $text--color;
+
+  .text {
+    position: relative;
+  }
+
+  .text:before {
+    content: "\201C";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+  }
+
+  .text:last-of-type:after {
+    content: "\201D";
+  }
+}
+
+.citation {
+  font-size: $font--size--one;
+  font-style: normal;
+  &:before {
+    content: "\2014\2009";
+  }
+}
+
+cite, .cite {
+  font-style: $font--emphasis;
+}
+
+q {
+  font-style: $font--emphasis;
+}
+
+hr {
+  border: $border--stroke $border--color;
+  border-width: $border--width 0 0;
+  clear: both;
+  margin: 0 0 $gutter;
+  height: 0;
+}
+
+ul, ol {
+  margin-left: $gutter--half;
+  padding-left: $gutter--half;
+  margin-bottom: $gutter;
+}
+
+ul {
+  list-style: disc outside;
+}
+
+ol {
+  list-style: decimal;
+}
+
+dl {
+}
+
+ul.list_none {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul.list_square {
+  list-style: square outside;
+}
+
+ul.list_circle {
+  list-style: circle outside;
+}
+
+ul.list_disc {
+  list-style: disc outside;
+}
+
+ul ul, ul ol,
+ol ol, ol ul {
+  margin: 0 0 0 $gutter;
+}
+
+li, dt, dd {
+  font-size: $font--size--one;
+  color: $text--color;
+  line-height: $font--size--one + $font--leading;
+  margin-bottom: 0;
+}
+
+code {
+  background-color: $color--lighter-grey;
+  color: $color--darker-grey;
+  padding: 1px 3px;
+  border-radius: 2px;
+
+  &.code_block {
+    display: block;
+    padding: $gutter--half;
+    background-color: $color--darker-grey;
+    color: $color--light-grey;
+    border-radius: $border--radius;
+  }
+}

@@ -1,0 +1,66 @@
+
+$base-font-size: 16px;
+$base-line-height: 1.25;
+$em-base: $base-font-size !default;
+
+$wrapper-width: 1920;
+$gutter: rem-calc($base-font-size + 3);
+$gutter--half: $gutter / 2;
+$gutter--double: $gutter * 2;
+
+$ms-base: $base-font-size 20;
+$ms-ratio: $golden;
+
+$font--family: "Avenir", "Verdana", "Helvetica", sans-serif;
+
+$font--emphasis: italic;
+
+$font--weight--light: 300;
+
+$font--weight--regular: 400;
+
+$font--weight--medium: 500;
+
+$font--weight--semi-bold: 600;
+
+$font--weight--bold: 700;
+
+$font--weight--black: 900;
+
+$font--size--minus-two: rem-calc(ms(-2));
+
+$font--size--minus-one: rem-calc(ms(-1));
+
+$font--size--one: rem-calc(ms(0));
+
+$font--size--two: rem-calc(ms(1));
+
+$font--size--three: rem-calc(ms(2));
+
+$font--size--four: rem-calc(ms(3));
+
+$font--size--five: rem-calc(ms(4));
+
+$font--size--six: rem-calc(ms(5));
+
+$font--size--seven: rem-calc(ms(6));
+
+$font--size--eight: rem-calc(ms(7));
+
+$font--size--nine: rem-calc(ms(8));
+
+$font--size--ten: rem-calc(ms(9));
+
+$font--size--eleven: rem-calc(ms(10));
+
+$font--size--twelve: rem-calc(ms(11));
+
+$font--leading: rem-calc(4px);
+
+$font--leading--tight: rem-calc(2px);
+
+$font--leading--loose: rem-calc(6px);
+
+$link--decoration: underline;
+
+$link--decoration--hover: underline;

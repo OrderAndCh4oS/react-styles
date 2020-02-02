@@ -1,0 +1,14 @@
+.panel {
+  border: $border;
+  border-radius: $border--radius;
+  height: 100%;
+  padding: $gutter;
+
+  &.panel_tight {
+    padding: $gutter--half;
+  }
+
+  &.panel_loose {
+    padding: $gutter--double;
+  }
+}

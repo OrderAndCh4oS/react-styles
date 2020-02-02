@@ -1,0 +1,62 @@
+
+$xsml-range: (421px, 767px);
+
+$sml-range: (768px, 1023px);
+
+$med-range: (1024px, 1239px);
+
+$lrg-range: (1240px, 1439px);
+
+$xlrg-range: (1440px, 1599px);
+
+$xxlrg-range: (1600px);
+
+$xsml: upper-bound($xsml-range);
+
+$sml: upper-bound($sml-range);
+
+$med: upper-bound($med-range);
+
+$lrg: upper-bound($lrg-range);
+
+$xlrg: upper-bound($xlrg-range);
+
+$xxlrg: upper-bound($xxlrg-range);
+
+$screen: "only screen";
+
+$landscape: "#{$screen} and (orientation: landscape)";
+
+$portrait: "#{$screen} and (orientation: portrait)";
+
+$xsml-up: "#{$screen} and (min-width:#{lower-bound($xsml-range)})";
+
+$xsml-down: "#{$screen} and (max-width:#{lower-bound($xsml)})";
+
+$xsml-only: "#{$screen} and (max-width: #{upper-bound($xsml-range)})";
+
+$sml-up: "#{$screen} and (min-width:#{lower-bound($sml-range)})";
+
+$sml-down: "#{$screen} and (max-width:#{lower-bound($sml)})";
+
+$sml-only: "#{$screen} and (min-width:#{lower-bound($sml-range)}) and (max-width:#{upper-bound($sml-range)})";
+
+$med-up: "#{$screen} and (min-width:#{lower-bound($med-range)})";
+
+$med-down: "#{$screen} and (max-width:#{lower-bound($med)})";
+
+$med-only: "#{$screen} and (min-width:#{lower-bound($med-range)}) and (max-width:#{upper-bound($med-range)})";
+
+$lrg-up: "#{$screen} and (min-width:#{lower-bound($lrg-range)})";
+
+$lrg-down: "#{$screen} and (max-width:#{lower-bound($lrg)})";
+
+$lrg-only: "#{$screen} and (min-width:#{lower-bound($lrg-range)}) and (max-width:#{upper-bound($lrg-range)})";
+
+$xlrg-up: "#{$screen} and (min-width:#{lower-bound($xlrg-range)})";
+
+$xlrg-down: "#{$screen} and (max-width:#{lower-bound($xlrg)})";
+
+$xlrg-only: "#{$screen} and (min-width:#{lower-bound($xlrg-range)}) and (max-width:#{upper-bound($xlrg-range)})";
+
+$xxlrg-up: "#{$screen} and (min-width:#{lower-bound($xxlrg-range)})";

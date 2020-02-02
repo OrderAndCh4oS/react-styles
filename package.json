@@ -1,0 +1,40 @@
+{
+  "name": "@orderandchaos/react-styles",
+  "version": "0.1.0",
+  "description": "Stylesheets framework for React, CSS in JS",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sarcoma/orderandchaos-styles"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "node-sass sass/styles.scss -o dist --output-style=compressed --precision=4",
+    "watch": "gulp sass:watch",
+    "build": "gulp"
+  },
+  "keywords": [
+    "sass",
+    "css",
+    "styles"
+  ],
+  "author": {
+    "name": "Sarcoma",
+    "email": "sean@orderandchaoscreative.com",
+    "url": "https://orderandchaoscreative.com/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "modularscale-sass": "^3.0.8"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^4.13.1",
+    "node-sass-tilde-importer": "^1.0.2",
+    "precss": "^4.0.0"
+  }
+}
