@@ -1,6 +1,6 @@
 {
   "name": "@orderandchaos/react-styles",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Stylesheets framework for React, CSS in JS",
   "repository": {
     "type": "git",
@@ -24,17 +24,20 @@
   },
   "license": "MIT",
   "dependencies": {
-    "modularscale-sass": "^3.0.8"
+    "modularscale-sass": "^3.0.10"
   },
   "devDependencies": {
-    "autoprefixer": "^9.5.1",
+    "autoprefixer": "^9.8.0",
     "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
     "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "node-sass-tilde-importer": "^1.0.2",
     "precss": "^4.0.0"
-  }
+  },
+  "browserslist": [
+    "defaults"
+  ]
 }

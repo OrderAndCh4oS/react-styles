@@ -1,4 +1,5 @@
+.idea/
 public/
 docs/
 config.nucleus.json
-/build/
+build/

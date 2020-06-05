@@ -26,7 +26,7 @@ gulp.task('css', () => {
     const sourcemaps = require('gulp-sourcemaps');
     const plugins = [
         precss(),
-        autoprefixer({browsers: ['last 3 version']}),
+        autoprefixer(),
         cssnano(),
     ];
     return gulp.src('build/**/*.css')
