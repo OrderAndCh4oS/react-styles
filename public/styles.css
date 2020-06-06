@@ -380,17 +380,17 @@ blockquote, .blockquote {
   padding: 0 1.1875rem;
   border-left: 3px solid #414141; }
 
-blockquote .text, .blockquote .text {
+.text {
   position: relative; }
 
-blockquote .text:before, .blockquote .text:before {
+.text:before {
   content: "\201C";
   display: block;
   position: absolute;
   top: 0;
   right: 100%; }
 
-blockquote .text:last-of-type:after, .blockquote .text:last-of-type:after {
+.text:last-of-type:after {
   content: "\201D"; }
 
 .citation {
@@ -454,166 +454,48 @@ code {
   padding: 1px 3px;
   border-radius: 2px; }
 
-code.code_block {
+.code_block {
   display: block;
   padding: 0.59375rem;
   background-color: #414141;
   color: #c4c4c4;
   border-radius: 4px; }
 
-/**
- * @atom Table
- * @section Elements > Table
- * @modifiers
- *  .table_alternatingRows Striped rows
- *  .table_alternatingColumns Striped columns
- * @markup
- *  <table>
- *      <thead>
- *      <tr>
- *          <th>Table Heading 1</th>
- *          <th>Table Heading 2</th>
- *          <th>Table Heading 3</th>
- *      </tr>
- *      </thead>
- *      <tfoot>
- *      <tr>
- *          <th>Table Footer 1</th>
- *          <th>Table Footer 2</th>
- *          <th>Table Footer 3</th>
- *      </tr>
- *      </tfoot>
- *      <tbody>
- *      <tr>
- *          <td>Table Cell 1</td>
- *          <td>Table Cell 2</td>
- *          <td>Table Cell 3</td>
- *      </tr>
- *      <tr>
- *          <td>Table Cell 1</td>
- *          <td>Table Cell 2</td>
- *          <td>Table Cell 3</td>
- *      </tr>
- *      <tr>
- *          <td>Table Cell 1</td>
- *          <td>Table Cell 2</td>
- *          <td>Table Cell 3</td>
- *      </tr>
- *      <tr>
- *          <td>Table Cell 1</td>
- *          <td>Table Cell 2</td>
- *          <td>Table Cell 3</td>
- *      </tr>
- *      </tbody>
- *  </table>
- *
- *  <table class="table--alternating-rows">
- *      <thead>
- *      <tr>
- *          <th>Table Heading 1</th>
- *          <th>Table Heading 2</th>
- *          <th>Table Heading 3</th>
- *      </tr>
- *      </thead>
- *      <tbody>
- *      <tr>
- *          <td>Table Cell 1</td>
- *          <td>Table Cell 2</td>
- *          <td>Table Cell 3</td>
- *      </tr>
- *      <tr>
- *          <td>Table Cell 1</td>
- *          <td>Table Cell 2</td>
- *          <td>Table Cell 3</td>
- *      </tr>
- *      <tr>
- *          <td>Table Cell 1</td>
- *          <td>Table Cell 2</td>
- *          <td>Table Cell 3</td>
- *      </tr>
- *      <tr>
- *          <td>Table Cell 1</td>
- *          <td>Table Cell 2</td>
- *          <td>Table Cell 3</td>
- *      </tr>
- *      </tbody>
- *  </table>
- *
- *  <table class="table--alternating-columns">
- *      <thead>
- *      <tr>
- *          <th>Table Heading 1</th>
- *          <th>Table Heading 2</th>
- *          <th>Table Heading 3</th>
- *      </tr>
- *      </thead>
- *      <tbody>
- *      <tr>
- *          <td>Table Cell 1</td>
- *          <td>Table Cell 2</td>
- *          <td>Table Cell 3</td>
- *      </tr>
- *      <tr>
- *          <td>Table Cell 1</td>
- *          <td>Table Cell 2</td>
- *          <td>Table Cell 3</td>
- *      </tr>
- *      </tbody>
- *  </table>
- */
-table {
+.table {
   width: 100%;
   margin: 0 0 1.1875rem; }
 
-table th {
+.table th {
   text-align: left;
   font-weight: 700; }
 
-table td, table th {
+.table td, .table th {
   padding: 0.19792rem 0.29688rem;
   border: none;
   border-bottom: 1px solid #c4c4c4; }
 
-table td {
+.table td {
   text-align: left;
   font-weight: 400; }
 
-table.table_alternatingRows tr:nth-child(odd) td:nth-child(odd) {
+.table_alternatingRows tr:nth-child(odd) td:nth-child(odd) {
   background-color: #dfdfdf; }
 
-table.table_alternatingRows tr:nth-child(even) td:nth-child(odd) {
+.table_alternatingRows tr:nth-child(even) td:nth-child(odd) {
   background-color: #eeeeee; }
 
-table.table_alternatingRows tr:nth-child(odd) td:nth-child(even) {
+.table_alternatingRows tr:nth-child(odd) td:nth-child(even) {
   background-color: #dfdfdf; }
 
-table.table_alternatingRows tr:nth-child(even) td:nth-child(even) {
+.table_alternatingRows tr:nth-child(even) td:nth-child(even) {
   background-color: #eeeeee; }
 
-table.table_alternatingColumns td:nth-child(odd) {
+.table_alternatingColumns td:nth-child(odd) {
   background-color: #dfdfdf; }
 
-table.table_alternatingColumns td:nth-child(even) {
+.table_alternatingColumns td:nth-child(even) {
   background-color: #eeeeee; }
 
-/**
- * @atom Input
- * @section Forms > Inputs
- * @modifiers
- *  .input_inline Inline Input
- *  .input_valid Input is valid
- *  .input_error Input has an error
- * @markup
- *   <div class="form-field">
- *       <input type="text"  placeholder="Text Input">
- *   </div>
- *   <div class="form-field">
- *       <input class="input--valid" type="text"  placeholder="Valid Text Input">
- *   </div>
- *   <div class="form-field">
- *       <input class="input--error" type="text"  placeholder="Error Text Input">
- *   </div>
- */
 input,
 input[type="file"],
 textarea,
@@ -634,22 +516,6 @@ select {
   margin: 0;
   transition: background-color 280ms ease-in-out, border-color 400ms ease-in-out; }
 
-input.input_inline,
-textarea.input_inline,
-select.input_inline {
-  display: inline-block;
-  width: auto; }
-
-input.input_valid,
-textarea.input_valid,
-select.input_valid {
-  border-color: #35c13a; }
-
-input.input_error,
-textarea.input_error,
-select.input_error {
-  border-color: #c62d32; }
-
 input[readonly],
 textarea[readonly],
 select[readonly] {
@@ -667,39 +533,16 @@ textarea:disabled,
 select:disabled {
   background-color: #c4c4c4; }
 
-/**
- * @atom Input
- * @section Forms > Inputs
- * @modifiers
- *  .input_inline Inline Input
- *  .input_valid Input is valid
- *  .input_error Input has an error
- * @markup
- *   <div class="form-field">
- *       <select>
- *           <option value="-1">Please Choose</option>
- *           <option value="1">Choice One</option>
- *           <option value="2">Choice Two</option>
- *           <option value="3">Choice Three</option>
- *       </select>
- *   </div>
- *   <div class="form-field">
- *       <select class="input--valid">
- *           <option value="-1">Please Choose</option>
- *           <option value="1" selected>Choice One</option>
- *           <option value="2">Choice Two</option>
- *           <option value="3">Choice Three</option>
- *       </select>
- *   </div>
- *   <div class="form-field">
- *       <select class="input--error">
- *           <option value="-1">Please Choose</option>
- *           <option value="1">Choice One</option>
- *           <option value="2">Choice Two</option>
- *           <option value="3">Choice Three</option>
- *       </select>
- *   </div>
- */
+.input_inline {
+  display: inline-block;
+  width: auto; }
+
+.input_valid {
+  border-color: #35c13a; }
+
+.input_error {
+  border-color: #c62d32; }
+
 select {
   padding: 0.25rem 0.375rem; }
 
@@ -725,38 +568,12 @@ input[type="checkbox"]:disabled,
 input[type="radio"]:disabled {
   background-color: #c4c4c4; }
 
-/**
- * @atom Label
- * @section Forms > Labels
- * @modifiers
- *  .label_text Label text
- *  .label_inline Inline label
- * @markup
- *  <label class="label--text">Label Text</label>
- *  <input type="text"  placeholder="Text Input">
- */
-label.label_text {
+.label_text {
   margin-bottom: 0.59375rem; }
 
-label.label_inline {
+.label_inline {
   display: inline; }
 
-/**
- * Wrapper for form fields
- * @atom Form Field
- * @section Forms > Field
- * @modifiers
- *  .formField_inline Inline form field
- * @markup
- *  <div class="form-field">
- *      <label class="label--text">Label Text</label>
- *      <input type="text"  placeholder="Text Input">
- *  </div>
- *  <div class="form-field form-field--inline">
- *      <label class="label--text">Label Text</label>
- *      <input type="text"  placeholder="Text Input">
- *  </div>
- */
 .formField {
   margin-bottom: 1.1875rem; }
 
@@ -764,16 +581,6 @@ label.label_inline {
   display: flex;
   flex: 0 1 auto; }
 
-/**
- * @atom Field Error
- * @section Forms > Validation
- * @markup
- *  <div class="form-field">
- *      <label class="label--text">Label Text</label>
- *      <input type="text" placeholder="Text Input">
- *      <p class="form-field--error">Oh no!</p>
- *  </div>
- */
 .formField_error {
   padding-top: 0.59375rem;
   padding-bottom: 0;
@@ -781,73 +588,20 @@ label.label_inline {
   font-size: 0.77254rem;
   color: #c62d32; }
 
-/**
- * @atom Fieldset
- * @section Forms > Form Group
- * @markup
- *  <fieldset>
- *      <div class="form-field">
- *          <label class="label--text">Label One</label>
- *          <input type="text" placeholder="Enter Text">
- *      </div>
- *      <div class="form-field">
- *          <label class="label--text">Label Two</label>
- *          <input type="text" placeholder="Enter Text">
- *      </div>
- *  </fieldset>
- */
 fieldset {
   padding: 1.1875rem 0.59375rem;
   margin-bottom: 1.1875rem;
   border-radius: 4px; }
 
-fieldset .formField:last-of-type {
+.formField:last-of-type {
   margin-bottom: 0; }
 
-/**
- * @atom Legend
- * @section Forms > Form Group
- * @markup
- *  <fieldset>
- *      <legend>Fieldset Legend</legend>
- *      <div class="form-field">
- *          <label class="label--text">Label</label>
- *          <input type="text" placeholder="Enter Text">
- *      </div>
- *  </fieldset>
- */
 legend {
   font-size: 1rem;
   color: #414141; }
 
-/**
- * @atom Button
- * @section Elements > Buttons
- * @modifiers
- *  .button_active The active state of the button
- *  .button_disabled The disabled state of the button
- *  .button_affirmative An encouraging button
- *  .button_destructive A dangerous button
- * @markup
- *  <button class="button">
- *    A button
- *  </button>
- *  <button class="button button--active">
- *    An active button
- *  </button>
- *  <button class="button button--disabled">
- *    A disabled button
- *  </button>
- *  <button class="button button--affirmative">
- *    An affirmative button
- *  </button>
- *  <button class="button button--destructive">
- *    A destructive button
- *  </button>
- */
-.button, .pagination .pagination_button,
+.button,
 .button:visited,
-.pagination .pagination_button:visited,
 button,
 input[type="submit"],
 input[type="reset"],
@@ -866,144 +620,49 @@ input[type="button"] {
   border-radius: 3px;
   -webkit-appearance: none; }
 
-.button.button_active, .pagination .button_active.pagination_button, .button:hover, .pagination .pagination_button:hover, .pagination .pagination_current, .button:focus, .pagination .pagination_button:focus, .button:active, .pagination .pagination_button:active,
-.button:visited.button_active,
-.pagination .pagination_button:visited.button_active,
-.button:visited:hover,
-.pagination .pagination_button:visited:hover,
-.pagination .pagination_current:visited,
-.button:visited:focus,
-.pagination .pagination_button:visited:focus,
-.button:visited:active,
-.pagination .pagination_button:visited:active,
-button.button_active,
+.button_active,
 button:hover,
 button:focus,
-button:active,
-input[type="submit"].button_active,
-input[type="submit"]:hover,
-input[type="submit"]:focus,
-input[type="submit"]:active,
-input[type="reset"].button_active,
-input[type="reset"]:hover,
-input[type="reset"]:focus,
-input[type="reset"]:active,
-input[type="button"].button_active,
-input[type="button"]:hover,
-input[type="button"]:focus,
-input[type="button"]:active {
+button:active {
   color: #fcfcfc;
   background: #808080;
   border: 1px solid #808080;
   text-decoration: none; }
 
-.button.button_disabled, .pagination .button_disabled.pagination_button, .button:disabled, .pagination .pagination_button:disabled, .pagination .pagination_disabled,
-.button:visited.button_disabled,
-.pagination .pagination_button:visited.button_disabled,
-.button:visited:disabled,
-.pagination .pagination_button:visited:disabled,
-.pagination .pagination_disabled:visited,
-button.button_disabled,
-button:disabled,
-input[type="submit"].button_disabled,
-input[type="submit"]:disabled,
-input[type="reset"].button_disabled,
-input[type="reset"]:disabled,
-input[type="button"].button_disabled,
-input[type="button"]:disabled {
+.button_disabled,
+button:disabled {
   cursor: default;
   border: 1px solid #c4c4c4;
   color: #dfdfdf;
   background-color: #c4c4c4; }
 
-.button.button_disabled:hover, .pagination .button_disabled.pagination_button:hover, .pagination .button_disabled.pagination_current, .button.button_disabled:active, .pagination .button_disabled.pagination_button:active, .button:disabled:hover, .pagination .pagination_button:disabled:hover, .pagination .pagination_current:disabled, .pagination .pagination_disabled:hover, .button:disabled:active, .pagination .pagination_button:disabled:active, .pagination .pagination_disabled:active,
-.button:visited.button_disabled:hover,
-.pagination .pagination_button:visited.button_disabled:hover,
-.pagination .pagination_current:visited.button_disabled,
-.button:visited.button_disabled:active,
-.pagination .pagination_button:visited.button_disabled:active,
-.button:visited:disabled:hover,
-.pagination .pagination_button:visited:disabled:hover,
-.pagination .pagination_current:visited:disabled,
-.pagination .pagination_disabled:visited:hover,
-.button:visited:disabled:active,
-.pagination .pagination_button:visited:disabled:active,
-.pagination .pagination_disabled:visited:active,
-button.button_disabled:hover,
-button.button_disabled:active,
+.button_disabled:hover, .button_disabled:active,
 button:disabled:hover,
-button:disabled:active,
-input[type="submit"].button_disabled:hover,
-input[type="submit"].button_disabled:active,
-input[type="submit"]:disabled:hover,
-input[type="submit"]:disabled:active,
-input[type="reset"].button_disabled:hover,
-input[type="reset"].button_disabled:active,
-input[type="reset"]:disabled:hover,
-input[type="reset"]:disabled:active,
-input[type="button"].button_disabled:hover,
-input[type="button"].button_disabled:active,
-input[type="button"]:disabled:hover,
-input[type="button"]:disabled:active {
+button:disabled:active {
   cursor: default;
   border: 1px solid #c4c4c4;
   color: #dfdfdf;
   background-color: #c4c4c4; }
 
-.button.button_destructive, .pagination .button_destructive.pagination_button,
-.button:visited.button_destructive,
-.pagination .pagination_button:visited.button_destructive,
-button.button_destructive,
-input[type="submit"].button_destructive,
-input[type="reset"].button_destructive,
-input[type="button"].button_destructive {
+.button_destructive {
   border-color: #c62d32;
   background-color: #c62d32;
   color: #fcfcfc; }
 
-.button.button_destructive:hover, .pagination .button_destructive.pagination_button:hover, .pagination .button_destructive.pagination_current,
-.button:visited.button_destructive:hover,
-.pagination .pagination_button:visited.button_destructive:hover,
-.pagination .pagination_current:visited.button_destructive,
-button.button_destructive:hover,
-input[type="submit"].button_destructive:hover,
-input[type="reset"].button_destructive:hover,
-input[type="button"].button_destructive:hover {
+.button_destructive:hover {
   border-color: #ee393c;
   background-color: #ee393c; }
 
-.button.button_affirmative, .pagination .button_affirmative.pagination_button,
-.button:visited.button_affirmative,
-.pagination .pagination_button:visited.button_affirmative,
-button.button_affirmative,
-input[type="submit"].button_affirmative,
-input[type="reset"].button_affirmative,
-input[type="button"].button_affirmative {
+.button_affirmative {
   border-color: #35c13a;
   background-color: #35c13a;
   color: #fcfcfc; }
 
-.button.button_affirmative:hover, .pagination .button_affirmative.pagination_button:hover, .pagination .button_affirmative.pagination_current,
-.button:visited.button_affirmative:hover,
-.pagination .pagination_button:visited.button_affirmative:hover,
-.pagination .pagination_current:visited.button_affirmative,
-button.button_affirmative:hover,
-input[type="submit"].button_affirmative:hover,
-input[type="reset"].button_affirmative:hover,
-input[type="button"].button_affirmative:hover {
+.button_affirmative:hover {
   border-color: #3be541;
   background-color: #3be541; }
 
-/**
- * @atom Switch
- * @section Elements > Buttons
- * @modifiers
- *  .button_switch_on Button toggled on
- * @markup
- *  <button class="button--switch"></button>
- *  <button class="button--switch button--switch--on"></button>
- */
-button.button_switch {
+.button_switch {
   border: none;
   height: 1.75rem;
   width: 3rem;
@@ -1013,10 +672,7 @@ button.button_switch {
   position: relative;
   transition: background-color 100ms ease-in-out; }
 
-button.button_switch.button_switch_on {
-  background-color: #35c13a; }
-
-button.button_switch:after {
+.button_switch:after {
   content: '';
   position: absolute;
   display: block;
@@ -1028,7 +684,10 @@ button.button_switch:after {
   border-radius: 0.875rem;
   transition: left 280ms ease-in-out; }
 
-button.button_switch.button_switch_on:after {
+.button_switch_on {
+  background-color: #35c13a; }
+
+.button_switch_on:after {
   left: 1.3125rem; }
 
 .button_icon-left {
@@ -1067,15 +726,15 @@ button.button_switch.button_switch_on:after {
   padding: 1.1875rem 2.375rem;
   margin: 0 auto; }
 
-.container.container_tight {
+.container_tight {
   padding-top: 0.59375rem;
   padding-bottom: 0.59375rem; }
 
-.container.container_loose {
+.container_loose {
   padding-top: 2.375rem;
   padding-bottom: 2.375rem; }
 
-.container.container_full-width {
+.container_fullWidth {
   max-width: none;
   overflow-x: hidden; }
 
@@ -1098,170 +757,170 @@ button.button_switch.button_switch_on:after {
   flex-wrap: nowrap;
   flex: 1; }
 
-.col-1 {
+.col1 {
   width: 8.3333%; }
 
-.col-2 {
+.col2 {
   width: 16.6666%; }
 
-.col-3 {
+.col3 {
   width: 25%; }
 
-.col-4 {
+.col4 {
   width: 33.3333%; }
 
-.col-5 {
+.col5 {
   width: 41.6666%; }
 
-.col-6 {
+.col6 {
   width: 50%; }
 
-.col-7 {
+.col7 {
   width: 58.3333%; }
 
-.col-8 {
+.col8 {
   width: 66.6666%; }
 
-.col-9 {
+.col9 {
   width: 75%; }
 
-.col-10 {
+.col10 {
   width: 83.3333%; }
 
-.col-11 {
+.col11 {
   width: 91.6666%; }
 
-.col-12 {
+.col12 {
   width: 100%; }
 
 @media only screen and (max-width: 1599px) {
-  .col-xlrg-1 {
+  .colXlrg1 {
     width: 8.3333%; }
-  .col-xlrg-2 {
+  .colXlrg2 {
     width: 16.6666%; }
-  .col-xlrg-3 {
+  .colXlrg3 {
     width: 25%; }
-  .col-xlrg-4 {
+  .colXlrg4 {
     width: 33.3333%; }
-  .col-xlrg-5 {
+  .colXlrg5 {
     width: 41.6666%; }
-  .col-xlrg-6 {
+  .colXlrg6 {
     width: 50%; }
-  .col-xlrg-7 {
+  .colXlrg7 {
     width: 58.3333%; }
-  .col-xlrg-8 {
+  .colXlrg8 {
     width: 66.6666%; }
-  .col-xlrg-9 {
+  .colXlrg9 {
     width: 75%; }
-  .col-xlrg-10 {
+  .colXlrg10 {
     width: 83.3333%; }
-  .col-xlrg-11 {
+  .colXlrg11 {
     width: 91.6666%; }
-  .col-xlrg-12 {
+  .colXlrg12 {
     width: 100%; } }
 
 @media lrg-down {
-  .col-lrg-1 {
+  .colLrg1 {
     width: 8.3333%; }
-  .col-lrg-2 {
+  .colLrg2 {
     width: 16.6666%; }
-  .col-lrg-3 {
+  .colLrg3 {
     width: 25%; }
-  .col-lrg-4 {
+  .colLrg4 {
     width: 33.3333%; }
-  .col-lrg-5 {
+  .colLrg5 {
     width: 41.6666%; }
-  .col-lrg-6 {
+  .colLrg6 {
     width: 50%; }
-  .col-lrg-7 {
+  .colLrg7 {
     width: 58.3333%; }
-  .col-lrg-8 {
+  .colLrg8 {
     width: 66.6666%; }
-  .col-lrg-9 {
+  .colLrg9 {
     width: 75%; }
-  .col-lrg-10 {
+  .colLrg10 {
     width: 83.3333%; }
-  .col-lrg-11 {
+  .colLrg11 {
     width: 91.6666%; }
-  .col-lrg-12 {
+  .colLrg12 {
     width: 100%; } }
 
 @media med-down {
-  .col-med-1 {
+  .colMed1 {
     width: 8.3333%; }
-  .col-med-2 {
+  .colMed2 {
     width: 16.6666%; }
-  .col-med-3 {
+  .colMed3 {
     width: 25%; }
-  .col-med-4 {
+  .colMed4 {
     width: 33.3333%; }
-  .col-med-5 {
+  .colMed5 {
     width: 41.6666%; }
-  .col-med-6 {
+  .colMed6 {
     width: 50%; }
-  .col-med-7 {
+  .colMed7 {
     width: 58.3333%; }
-  .col-med-8 {
+  .colMed8 {
     width: 66.6666%; }
-  .col-med-9 {
+  .colMed9 {
     width: 75%; }
-  .col-med-10 {
+  .colMed10 {
     width: 83.3333%; }
-  .col-med-11 {
+  .colMed11 {
     width: 91.6666%; }
-  .col-med-12 {
+  .colMed12 {
     width: 100%; } }
 
 @media only screen and (max-width: 1023px) {
-  .col-sml-1 {
+  .colSml1 {
     width: 8.3333%; }
-  .col-sml-2 {
+  .colSml2 {
     width: 16.6666%; }
-  .col-sml-3 {
+  .colSml3 {
     width: 25%; }
-  .col-sml-4 {
+  .colSml4 {
     width: 33.3333%; }
-  .col-sml-5 {
+  .colSml5 {
     width: 41.6666%; }
-  .col-sml-6 {
+  .colSml6 {
     width: 50%; }
-  .col-sml-7 {
+  .colSml7 {
     width: 58.3333%; }
-  .col-sml-8 {
+  .colSml8 {
     width: 66.6666%; }
-  .col-sml-9 {
+  .colSml9 {
     width: 75%; }
-  .col-sml-10 {
+  .colSml10 {
     width: 83.3333%; }
-  .col-sml-11 {
+  .colSml11 {
     width: 91.6666%; }
-  .col-sml-12 {
+  .colSml12 {
     width: 100%; } }
 
 @media only screen and (max-width: 767px) {
-  .col-xsml-1 {
+  .colXsml1 {
     width: 8.3333%; }
-  .col-xsml-2 {
+  .colXsml2 {
     width: 16.6666%; }
-  .col-xsml-3 {
+  .colXsml3 {
     width: 25%; }
-  .col-xsml-4 {
+  .colXsml4 {
     width: 33.3333%; }
-  .col-xsml-5 {
+  .colXsml5 {
     width: 41.6666%; }
-  .col-xsml-6 {
+  .colXsml6 {
     width: 50%; }
-  .col-xsml-7 {
+  .colXsml7 {
     width: 58.3333%; }
-  .col-xsml-8 {
+  .colXsml8 {
     width: 66.6666%; }
-  .col-xsml-9 {
+  .colXsml9 {
     width: 75%; }
-  .col-xsml-10 {
+  .colXsml10 {
     width: 83.3333%; }
-  .col-xsml-11 {
+  .colXsml11 {
     width: 91.6666%; }
-  .col-xsml-12 {
+  .colXsml12 {
     width: 100%; } }
 
 .flex_row {
@@ -1524,10 +1183,10 @@ button.button_switch.button_switch_on:after {
   height: 100%;
   padding: 1.1875rem; }
 
-.panel.panel_tight {
+.panel_tight {
   padding: 0.59375rem; }
 
-.panel.panel_loose {
+.panel_loose {
   padding: 2.375rem; }
 
 .border_bottom {
@@ -1535,24 +1194,28 @@ button.button_switch.button_switch_on:after {
   padding-bottom: 1.1875rem;
   margin-bottom: 1.1875rem; }
 
-.border_bottom.border_tight {
+.border_bottom_tight {
+  border-bottom: 1px solid #c4c4c4;
   padding-bottom: 0.59375rem;
   margin-bottom: 0.59375rem; }
 
-.border_bottom.border_loose {
+.border_bottom_loose {
+  border-bottom: 1px solid #c4c4c4;
   padding-bottom: 2.375rem;
   margin-bottom: 2.375rem; }
 
-.border_top {
+.border {
   border-top: 1px solid #c4c4c4;
   padding-top: 1.1875rem;
   margin-top: 1.1875rem; }
 
-.border_top.border_tight {
+.border_top_tight {
+  border-top: 1px solid #c4c4c4;
   padding-top: 0.59375rem;
   margin-top: 0.59375rem; }
 
-.border_top.border_loose {
+.border_top_loose {
+  border-top: 1px solid #c4c4c4;
   padding-top: 2.375rem;
   margin-top: 2.375rem; }
 
@@ -1560,20 +1223,24 @@ button.button_switch.button_switch_on:after {
   border-left: 1px solid #c4c4c4;
   padding-left: 1.1875rem; }
 
-.border_left.border_tight {
+.border_left_tight {
+  border-left: 1px solid #c4c4c4;
   padding-left: 0.59375rem; }
 
-.border_left.border_loose {
+.border_left_loose {
+  border-left: 1px solid #c4c4c4;
   padding-left: 2.375rem; }
 
 .border_right {
   border-right: 1px solid #c4c4c4;
   padding-right: 1.1875rem; }
 
-.border_right.border_tight {
+.border_right_tight {
+  border-right: 1px solid #c4c4c4;
   padding-right: 0.59375rem; }
 
-.border_right.border_loose {
+.border_right_loose {
+  border-right: 1px solid #c4c4c4;
   padding-right: 2.375rem; }
 
 .border_top_none {
@@ -1772,121 +1439,6 @@ button.button_switch.button_switch_on:after {
 
 .pageWrapper {
   min-height: 100%; }
-
-/**
- * @molecule Item List
- * @section List
- * @markup
- *  <section class="container itemList">
- *      <div class="row itemList_row">
- *          <div class="column itemList_column col-1">
- *              <input type="checkbox" name="item-one-select"/>
- *          </div>
- *          <div class="column itemList_column col-2">
- *              <p class="text itemList_text"><a href="#">Item Link</a></p>
- *          </div>
- *          <div class="column itemList_column col-6">
- *              <p class="text itemList_text">The items description can go here, the height will expand to accommodate it, so it can be quite long if it needs to be.</p>
- *          </div>
- *          <div class="column itemList_column col-3">
- *              <p class="text itemList_text text_align-right">
- *                  <button>Edit</button>
- *                  <button class="button_destructive ">X</button>
- *              </p>
- *          </div>
- *      </div>
- *      <div class="row itemList_row">
- *          <div class="column itemList_column col-1">
- *              <input type="checkbox" name="item-one-select"/>
- *          </div>
- *          <div class="column itemList_column col-2">
- *              <p class="text itemList_text"><a href="#">Item Link</a></p>
- *          </div>
- *          <div class="column itemList_column col-6">
- *              <p class="text itemList_text">The items description can go here, the height will expand to accommodate it, so it can be quite long if it needs to be.</p>
- *          </div>
- *          <div class="column itemList_column col-3">
- *              <p class="text itemList_text text_align-right">
- *                  <button>Edit</button>
- *                  <button class="button_destructive ">X</button>
- *              </p>
- *          </div>
- *      </div>
- *      <div class="row itemList_row">
- *          <div class="column itemList_column col-1">
- *              <input class="itemList_input" type="checkbox" name="item-one-select"/>
- *          </div>
- *          <div class="column itemList_column col-2">
- *              <p class="text itemList_text"><a href="#">Item Link</a></p>
- *          </div>
- *          <div class="column itemList_column col-6">
- *              <p class="text itemList_text">The items description can go here, the height will expand to accommodate it, so it can be quite long if it needs to be.</p>
- *          </div>
- *          <div class="column itemList_column col-3">
- *              <p class="text itemList_text text_align-right">
- *                  <button>Edit</button>
- *                  <button class="button_destructive ">X</button>
- *              </p>
- *          </div>
- *      </div>
- *  </section>
- */
-.itemList {
-  flex-wrap: nowrap; }
-
-.itemList .itemList_row {
-  border-bottom: 1px solid #c4c4c4;
-  margin-bottom: 0.59375rem; }
-
-.itemList .itemList_column {
-  margin-bottom: 0.59375rem; }
-
-.itemList .itemList_input {
-  margin-bottom: 0; }
-
-.itemList .itemList_text {
-  margin-bottom: 0; }
-
-/**
- * Todo: https://wiki.mozilla.org/Accessibility/TableHeaders Investigate solutions for tabulated data lists
- * @molecule Pagination
- * @section List > Pagination
- * @markup
- *  <nav class="pagination">
- *    <a href="#" class="pagination--button">&lt;&lt;</a>
- *    <a href="#" class="pagination--button">&lt;</a>
- *    <span class="pagination--button pagination--disabled">...</span>
- *    <a href="#" class="pagination--button">2</a>
- *    <span class="pagination--button pagination--current">3</span>
- *    <a href="#" class="pagination--button">4</a>
- *    <span class="pagination--button pagination--disabled">...</span>
- *    <a href="#" class="pagination--button">&gt;</a>
- *    <a href="#" class="pagination--button">&gt;&gt;</a>
- *  </nav>
- */
-.pagination {
-  margin-bottom: 0.59375rem;
-  display: flex;
-  flex: 1 0 auto;
-  flex-wrap: nowrap; }
-
-.pagination .pagination_button {
-  color: #fcfcfc;
-  margin: 0 0.29688rem; }
-
-.pagination .pagination_button:first-child {
-  margin-left: 0; }
-
-.pagination .pagination_button:last-child {
-  margin-right: 0; }
-
-.pagination .pagination_current {
-  padding: 0.3125rem 0.75rem 0.3125rem;
-  cursor: default; }
-
-.pagination .pagination_disabled {
-  padding: 0.3125rem 0.75rem 0.3125rem;
-  cursor: default; }
 
 .text_light {
   font-family: "Avenir", "Verdana", "Helvetica", sans-serif;

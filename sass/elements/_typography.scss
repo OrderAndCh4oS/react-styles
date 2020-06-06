@@ -106,22 +106,22 @@ blockquote, .blockquote {
   margin: 0 0 $gutter;
   padding: 0 $gutter;
   border-left: $border--width--thicker $border--stroke $text--color;
+}
 
-  .text {
-    position: relative;
-  }
+.text {
+  position: relative;
+}
 
-  .text:before {
-    content: "\201C";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 100%;
-  }
+.text:before {
+  content: "\201C";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+}
 
-  .text:last-of-type:after {
-    content: "\201D";
-  }
+.text:last-of-type:after {
+  content: "\201D";
 }
 
 .citation {
@@ -200,12 +200,12 @@ code {
   color: $color--darker-grey;
   padding: 1px 3px;
   border-radius: 2px;
+}
 
-  &.code_block {
-    display: block;
-    padding: $gutter--half;
-    background-color: $color--darker-grey;
-    color: $color--light-grey;
-    border-radius: $border--radius;
-  }
+.code_block {
+  display: block;
+  padding: $gutter--half;
+  background-color: $color--darker-grey;
+  color: $color--light-grey;
+  border-radius: $border--radius;
 }

@@ -3,12 +3,12 @@
   border-radius: $border--radius;
   height: 100%;
   padding: $gutter;
+}
 
-  &.panel_tight {
-    padding: $gutter--half;
-  }
+.panel_tight {
+  padding: $gutter--half;
+}
 
-  &.panel_loose {
-    padding: $gutter--double;
-  }
+.panel_loose {
+  padding: $gutter--double;
 }

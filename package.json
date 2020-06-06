@@ -1,6 +1,6 @@
 {
   "name": "@orderandchaos/react-styles",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "Stylesheets framework for React, CSS in JS",
   "repository": {
     "type": "git",
@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "css": "node-sass sass/styles.scss -o dist --output-style=compressed --precision=4",
     "watch": "gulp sass:watch",
-    "build": "gulp"
+    "build": "gulp && tcm dist"
   },
   "keywords": [
     "sass",
@@ -24,7 +24,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "modularscale-sass": "^3.0.10"
+    "modularscale-sass": "^3.0.10",
+    "typed-css-modules": "^0.6.4"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.0",
