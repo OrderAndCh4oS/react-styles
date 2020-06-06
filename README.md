@@ -4,18 +4,7 @@
 
 `npm i @orderandchaos/react-styles`
 
-## Import
+## React Import
 
-Sass import: `@import "~@orderandchaos/styles/sass/react-styles";
+`import styles from "@orderandchaos/react-styles/dist/styles.module.css";`
 `
-## Contributing
-
-Clone the project `git clone https://github.com/sarcoma/orderandchaos-react-styles.git`
-
-Install dependencies: `npm install` or `yarn install`
-
-Avaiable `npm` scripts:
-
-`npm run css` Build SCSS to CSS.
-
-`npm run watch` Watch for SCSS changes and build CSS
