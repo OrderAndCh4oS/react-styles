@@ -1,5 +1,3 @@
-// Todo: Add .button_icon-left and .button_icon-right
-
 .button,
 .button:visited,
 button,
@@ -101,10 +99,10 @@ button:disabled {
   }
 }
 
-.button_icon-left {
+.button_iconLeft {
   padding-right: $gutter--half;
 }
 
-.button_icon-right {
+.button_iconRight {
   padding-left: $gutter--half;
 }
