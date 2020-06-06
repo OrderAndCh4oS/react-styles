@@ -2,6 +2,7 @@
 
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const rename = require('gulp-rename');
 const tildeImporter = require('node-sass-tilde-importer');
 
 const precss = require('precss');
@@ -32,6 +33,7 @@ gulp.task('css', () => {
     return gulp.src('build/**/*.css')
         .pipe(sourcemaps.init())
         .pipe(postcss(plugins))
+        .pipe(rename('styles.module.css'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('dist/'));
 });

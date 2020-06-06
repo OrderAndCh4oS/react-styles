@@ -37,8 +37,8 @@ declare const styles: {
   readonly "button_affirmative": string;
   readonly "button_switch": string;
   readonly "button_switch_on": string;
-  readonly "button_icon-left": string;
-  readonly "button_icon-right": string;
+  readonly "button_iconLeft": string;
+  readonly "button_iconRight": string;
   readonly "modalOverlay": string;
   readonly "modal": string;
   readonly "modalHeader": string;

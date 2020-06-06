@@ -690,10 +690,10 @@ button:disabled:active {
 .button_switch_on:after {
   left: 1.3125rem; }
 
-.button_icon-left {
+.button_iconLeft {
   padding-right: 0.59375rem; }
 
-.button_icon-right {
+.button_iconRight {
   padding-left: 0.59375rem; }
 
 .modalOverlay {

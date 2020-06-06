@@ -1,6 +1,6 @@
 {
   "name": "@orderandchaos/react-styles",
-  "version": "0.2.1",
+  "version": "0.2.3",
   "description": "Stylesheets framework for React, CSS in JS",
   "repository": {
     "type": "git",
@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "css": "node-sass sass/styles.scss -o dist --output-style=compressed --precision=4",
     "watch": "gulp sass:watch",
-    "build": "gulp && tcm dist"
+    "build": "gulp && tcm dist",
+    "prepare": "gulp && tcm dist"
   },
   "keywords": [
     "sass",
@@ -34,6 +35,7 @@
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
+    "gulp-rename": "^2.0.0",
     "node-sass": "^4.14.1",
     "node-sass-tilde-importer": "^1.0.2",
     "precss": "^4.0.0"
