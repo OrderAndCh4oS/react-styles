@@ -1,3 +1,6 @@
+[![NPM](https://img.shields.io/npm/v/@orderandchaos/react-styles.svg)](https://www.npmjs.com/package/@orderandchaos/react-styles)
+
+
 # Order & Chaos Styles 
 
 ## Install
