@@ -20,6 +20,9 @@ input[type="button"] {
 }
 
 .button_active,
+.button:hover,
+.button:focus,
+.button:active,
 button:hover,
 button:focus,
 button:active {
@@ -30,6 +33,7 @@ button:active {
 }
 
 .button_disabled,
+.button:disabled,
 button:disabled {
   cursor: default;
   border: $button--border--disabled;

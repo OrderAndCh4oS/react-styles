@@ -621,6 +621,9 @@ input[type="button"] {
   -webkit-appearance: none; }
 
 .button_active,
+.button:hover,
+.button:focus,
+.button:active,
 button:hover,
 button:focus,
 button:active {
@@ -630,6 +633,7 @@ button:active {
   text-decoration: none; }
 
 .button_disabled,
+.button:disabled,
 button:disabled {
   cursor: default;
   border: 1px solid #c4c4c4;
@@ -637,6 +641,8 @@ button:disabled {
   background-color: #c4c4c4; }
 
 .button_disabled:hover, .button_disabled:active,
+.button:disabled:hover,
+.button:disabled:active,
 button:disabled:hover,
 button:disabled:active {
   cursor: default;
@@ -1639,3 +1645,9 @@ button:disabled:active {
 
 .text_color {
   color: #414141; }
+
+.height_100 {
+  height: 100%; }
+
+.height_auto {
+  height: auto; }

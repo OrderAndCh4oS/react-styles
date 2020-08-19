@@ -19,7 +19,6 @@ gulp.task('sass', function() {
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./build'))
         .pipe(gulp.dest('./public'))
-        .pipe(gulp.dest('./docs/styles'));
 });
 
 gulp.task('css', () => {
