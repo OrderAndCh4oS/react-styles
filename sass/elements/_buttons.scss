@@ -110,3 +110,36 @@ button:disabled {
 .button_iconRight {
   padding-left: $gutter--half;
 }
+
+button.radioButton {
+  background-color: $color--dark-grey;
+  border-color: $color--dark-grey;
+  border-right: $border--width $border--stroke $color--lighter-grey;
+  margin-bottom: 0;
+  border-radius: 0;
+  &:hover {
+    border-color: $color--grey;
+    background-color: $color--grey;
+    border-right: $border--width $border--stroke $color--lighter-grey;
+  }
+  &:first-of-type {
+    border-top-left-radius: $button--border-radius;
+    border-bottom-left-radius: $button--border-radius;
+  }
+  &:last-of-type {
+    border-bottom-right-radius: $button--border-radius;
+    border-top-right-radius: $button--border-radius;
+    border-right: $border--width $border--stroke $color--dark-grey;
+    &.checked {
+      border-right: $border--width $border--stroke $color--green;
+    }
+    &:hover {
+      border-right: $border--width $border--stroke $color--lighter-grey;
+    }
+  }
+  &.checked {
+    border-color: $color--green;
+    background-color: $color--green;
+    border-right: $border--width $border--stroke $color--lighter-grey;
+  }
+}

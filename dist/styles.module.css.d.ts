@@ -367,6 +367,8 @@ declare const styles: {
   readonly "hide": string;
   readonly "relative": string;
   readonly "text_color": string;
+  readonly "height_100": string;
+  readonly "height_auto": string;
 };
 export = styles;
 
