@@ -703,9 +703,9 @@ button:disabled:active {
   padding-left: 0.59375rem; }
 
 .button_radio {
-  background-color: #525252;
-  border-top-color: #525252;
-  border-bottom-color: #525252;
+  background-color: #1c1c1c;
+  border-top-color: #1c1c1c;
+  border-bottom-color: #1c1c1c;
   border-right: 1px solid #dfdfdf;
   border-left: none;
   margin-bottom: 0;
@@ -726,7 +726,7 @@ button:disabled:active {
 .button_radio:first-of-type {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
-  border-left: 1px solid #525252; }
+  border-left: 1px solid 1px solid #1c1c1c; }
 
 .button_radio:first-of-type:hover {
   border-left: 1px solid #808080; }
@@ -737,7 +737,7 @@ button:disabled:active {
 .button_radio:last-of-type {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
-  border-right: 1px solid #525252; }
+  border-right: 1px solid #808080; }
 
 .button_radio:last-of-type:hover {
   border-right-color: #808080; }

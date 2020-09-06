@@ -112,9 +112,9 @@ button:disabled {
 }
 
 .button_radio {
-  background-color: $color--dark-grey;
-  border-top-color: $color--dark-grey;
-  border-bottom-color: $color--dark-grey;
+  background-color: $button--bk-color;
+  border-top-color: $button--bk-color;
+  border-bottom-color: $button--bk-color;
   border-right: $border--width $border--stroke $color--lighter-grey;
   border-left: none;
   margin-bottom: 0;
@@ -125,18 +125,18 @@ button:disabled {
     border-bottom-color: $color--green;
   }
   &:hover {
-    background-color: $color--grey;
-    border-top-color: $color--grey;
-    border-bottom-color: $color--grey;
+    background-color: $button--bk-color--hover;
+    border-top-color: $color--primary--hover;
+    border-bottom-color: $color--primary--hover;
     border-left: none;
     border-right: $border--width $border--stroke $color--lighter-grey;
   }
   &:first-of-type {
     border-top-left-radius: $button--border-radius;
     border-bottom-left-radius: $button--border-radius;
-    border-left: $border--width $border--stroke $color--dark-grey;
+    border-left: $border--width $border--stroke $button--border;
     &:hover {
-      border-left: $border--width $border--stroke $color--grey;
+      border-left: $border--width $border--stroke $color--primary--hover;
     }
     &.checked {
       border-left: $border--width $border--stroke $color--green;
@@ -145,9 +145,9 @@ button:disabled {
   &:last-of-type {
     border-bottom-right-radius: $button--border-radius;
     border-top-right-radius: $button--border-radius;
-    border-right: $border--width $border--stroke $color--dark-grey;
+    border-right: $border--width $border--stroke $color--primary--hover;
     &:hover {
-      border-right-color: $color--grey;
+      border-right-color: $color--primary--hover;
     }
     &.checked {
       border-right-color: $color--green;
