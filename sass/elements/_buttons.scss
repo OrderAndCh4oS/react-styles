@@ -113,7 +113,8 @@ button:disabled {
 
 .button_radio {
   background-color: $color--dark-grey;
-  border-color: $color--dark-grey;
+  border-top-color: $color--dark-grey;
+  border-bottom-color: $color--dark-grey;
   border-right: $border--width $border--stroke $color--lighter-grey;
   margin-bottom: 0;
   border-radius: 0;

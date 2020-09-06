@@ -709,30 +709,37 @@ button:disabled:active {
   margin-bottom: 0;
   border-radius: 0; }
 
+.button_radio.checked {
+  background-color: #35c13a;
+  border-top-color: #35c13a;
+  border-bottom-color: #35c13a; }
+
 .button_radio:hover {
-  border-color: #808080;
   background-color: #808080;
-  border-right: 1px solid #dfdfdf; }
+  border-top-color: #808080;
+  border-bottom-color: #808080; }
 
 .button_radio:first-of-type {
   border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px; }
+  border-bottom-left-radius: 3px;
+  border-left: 1px solid #525252; }
+
+.button_radio:first-of-type:hover {
+  border-left-color: #808080; }
+
+.button_radio:first-of-type.checked {
+  border-left-color: #35c13a; }
 
 .button_radio:last-of-type {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
   border-right: 1px solid #525252; }
 
-.button_radio:last-of-type.checked {
-  border-right: 1px solid #35c13a; }
-
 .button_radio:last-of-type:hover {
-  border-right: 1px solid #dfdfdf; }
+  border-right-color: #808080; }
 
-.button_radio.checked {
-  border-color: #35c13a;
-  background-color: #35c13a;
-  border-right: 1px solid #dfdfdf; }
+.button_radio:last-of-type.checked {
+  border-right-color: #35c13a; }
 
 .modalOverlay {
   position: fixed;
