@@ -39,7 +39,7 @@ declare const styles: {
   readonly "button_switch_on": string;
   readonly "button_iconLeft": string;
   readonly "button_iconRight": string;
-  readonly "radioButton": string;
+  readonly "button_radio": string;
   readonly "checked": string;
   readonly "modalOverlay": string;
   readonly "modal": string;

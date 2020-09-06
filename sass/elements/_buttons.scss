@@ -117,29 +117,36 @@ button:disabled {
   border-right: $border--width $border--stroke $color--lighter-grey;
   margin-bottom: 0;
   border-radius: 0;
+  &.checked {
+    background-color: $color--green;
+    border-top-color: $color--green;
+    border-bottom-color: $color--green;
+  }
   &:hover {
-    border-color: $color--grey;
     background-color: $color--grey;
-    border-right: $border--width $border--stroke $color--lighter-grey;
+    border-top-color: $color--grey;
+    border-bottom-color: $color--grey;
   }
   &:first-of-type {
     border-top-left-radius: $button--border-radius;
     border-bottom-left-radius: $button--border-radius;
+    border-left: $border--width $border--stroke $color--dark-grey;
+    &:hover {
+      border-left-color: $color--grey;
+    }
+    &.checked {
+      border-left-color: $color--green;
+    }
   }
   &:last-of-type {
     border-bottom-right-radius: $button--border-radius;
     border-top-right-radius: $button--border-radius;
     border-right: $border--width $border--stroke $color--dark-grey;
-    &.checked {
-      border-right: $border--width $border--stroke $color--green;
-    }
     &:hover {
-      border-right: $border--width $border--stroke $color--lighter-grey;
+      border-right-color: $color--grey;
     }
-  }
-  &.checked {
-    border-color: $color--green;
-    background-color: $color--green;
-    border-right: $border--width $border--stroke $color--lighter-grey;
+    &.checked {
+      border-right-color: $color--green;
+    }
   }
 }
