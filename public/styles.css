@@ -704,8 +704,10 @@ button:disabled:active {
 
 .button_radio {
   background-color: #525252;
-  border-color: #525252;
+  border-top-color: #525252;
+  border-bottom-color: #525252;
   border-right: 1px solid #dfdfdf;
+  border-left: none;
   margin-bottom: 0;
   border-radius: 0; }
 
