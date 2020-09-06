@@ -702,6 +702,38 @@ button:disabled:active {
 .button_iconRight {
   padding-left: 0.59375rem; }
 
+button.radioButton {
+  background-color: #525252;
+  border-color: #525252;
+  border-right: 1px solid #dfdfdf;
+  margin-bottom: 0;
+  border-radius: 0; }
+
+button.radioButton:hover {
+  border-color: #808080;
+  background-color: #808080;
+  border-right: 1px solid #dfdfdf; }
+
+button.radioButton:first-of-type {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
+
+button.radioButton:last-of-type {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-right: 1px solid #525252; }
+
+button.radioButton:last-of-type.checked {
+  border-right: 1px solid #35c13a; }
+
+button.radioButton:last-of-type:hover {
+  border-right: 1px solid #dfdfdf; }
+
+button.radioButton.checked {
+  border-color: #35c13a;
+  background-color: #35c13a;
+  border-right: 1px solid #dfdfdf; }
+
 .modalOverlay {
   position: fixed;
   top: 0;
