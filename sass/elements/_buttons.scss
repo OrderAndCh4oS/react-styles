@@ -111,7 +111,7 @@ button:disabled {
   padding-left: $gutter--half;
 }
 
-button.radioButton {
+.button_radio {
   background-color: $color--dark-grey;
   border-color: $color--dark-grey;
   border-right: $border--width $border--stroke $color--lighter-grey;
