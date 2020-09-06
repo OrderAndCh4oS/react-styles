@@ -719,7 +719,9 @@ button:disabled:active {
 .button_radio:hover {
   background-color: #808080;
   border-top-color: #808080;
-  border-bottom-color: #808080; }
+  border-bottom-color: #808080;
+  border-left: none;
+  border-right: 1px solid #dfdfdf; }
 
 .button_radio:first-of-type {
   border-top-left-radius: 3px;
@@ -727,10 +729,10 @@ button:disabled:active {
   border-left: 1px solid #525252; }
 
 .button_radio:first-of-type:hover {
-  border-left-color: #808080; }
+  border-left: 1px solid #808080; }
 
 .button_radio:first-of-type.checked {
-  border-left-color: #35c13a; }
+  border-left: 1px solid #35c13a; }
 
 .button_radio:last-of-type {
   border-bottom-right-radius: 3px;

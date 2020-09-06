@@ -128,16 +128,18 @@ button:disabled {
     background-color: $color--grey;
     border-top-color: $color--grey;
     border-bottom-color: $color--grey;
+    border-left: none;
+    border-right: $border--width $border--stroke $color--lighter-grey;
   }
   &:first-of-type {
     border-top-left-radius: $button--border-radius;
     border-bottom-left-radius: $button--border-radius;
     border-left: $border--width $border--stroke $color--dark-grey;
     &:hover {
-      border-left-color: $color--grey;
+      border-left: $border--width $border--stroke $color--grey;
     }
     &.checked {
-      border-left-color: $color--green;
+      border-left: $border--width $border--stroke $color--green;
     }
   }
   &:last-of-type {
