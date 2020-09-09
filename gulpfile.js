@@ -37,7 +37,7 @@ gulp.task('css', () => {
         .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('sass:watch', function() {
+gulp.task('watch', function() {
     gulp.watch('./sass/*.scss', gulp.series('sass'));
     gulp.watch('./build/*.css', gulp.series('css'));
 });

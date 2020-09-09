@@ -79,7 +79,15 @@ button:disabled {
   overflow: hidden;
   position: relative;
   transition: background-color 100ms ease-in-out;
-
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $color--red;
+    border: none;
+  }
+  &:focus {
+    outline: $color--light-grey;
+  }
   &:after {
     content: '';
     position: absolute;
@@ -97,7 +105,11 @@ button:disabled {
 
 .button_switch_on {
   background-color: $color--green;
-
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $color--green;
+  }
   &:after {
     left: rem-calc(21);
   }
@@ -153,4 +165,11 @@ button:disabled {
       border-right-color: $color--green;
     }
   }
+}
+
+.button_tableHead {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
 }

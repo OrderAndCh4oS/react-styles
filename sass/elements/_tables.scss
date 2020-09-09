@@ -1,7 +1,7 @@
 
 .table {
   width: 100%;
-  margin: 0 0 $gutter;
+  border-collapse: collapse;
 
   th {
     text-align: left;
@@ -21,6 +21,7 @@
 }
 
 .table_alternatingRows {
+
   tr:nth-child(odd) td:nth-child(odd) {
     background-color: $color--lighter-grey;
   }
@@ -39,11 +40,18 @@
 }
 
 .table_alternatingColumns {
+
   td:nth-child(odd) {
     background-color: $color--lighter-grey;
   }
 
   td:nth-child(even) {
     background-color: $color--lightest-grey
+  }
+}
+
+.table_withHeaderButtons {
+  th {
+    padding: 0;
   }
 }
