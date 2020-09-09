@@ -1,10 +1,10 @@
 declare const styles: {
-  readonly "header-one": string;
-  readonly "header-two": string;
-  readonly "header-three": string;
-  readonly "header-five": string;
-  readonly "header-four": string;
-  readonly "header-six": string;
+  readonly "header_one": string;
+  readonly "header_two": string;
+  readonly "header_three": string;
+  readonly "header_five": string;
+  readonly "header_four": string;
+  readonly "header_six": string;
   readonly "pretitle": string;
   readonly "citation": string;
   readonly "text": string;
@@ -22,6 +22,7 @@ declare const styles: {
   readonly "table": string;
   readonly "table_alternatingRows": string;
   readonly "table_alternatingColumns": string;
+  readonly "table_withHeaderButtons": string;
   readonly "input_inline": string;
   readonly "input_valid": string;
   readonly "input_error": string;
@@ -41,6 +42,7 @@ declare const styles: {
   readonly "button_iconRight": string;
   readonly "button_radio": string;
   readonly "checked": string;
+  readonly "button_tableHead": string;
   readonly "modalOverlay": string;
   readonly "modal": string;
   readonly "modalHeader": string;
@@ -124,6 +126,10 @@ declare const styles: {
   readonly "colXsml10": string;
   readonly "colXsml11": string;
   readonly "colXsml12": string;
+  readonly "d_flex": string;
+  readonly "d_block": string;
+  readonly "d_inlineBlock": string;
+  readonly "d_grid": string;
   readonly "flex_row": string;
   readonly "flex_rowReverse": string;
   readonly "flex_column": string;

@@ -9,9 +9,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "css": "node-sass sass/styles.scss -o dist --output-style=compressed --precision=4",
-    "watch": "gulp sass:watch",
     "build": "gulp && tcm dist",
-    "prepare": "gulp && tcm dist"
+    "prepare": "gulp && tcm dist",
+    "deploy": "gh-pages -d public"
   },
   "keywords": [
     "sass",
@@ -25,6 +25,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^3.1.0",
     "modularscale-sass": "^3.0.10",
     "typed-css-modules": "^0.6.4"
   },
