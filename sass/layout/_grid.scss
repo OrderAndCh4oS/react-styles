@@ -141,7 +141,7 @@
   }
 }
 
-@media #{lrg-down} {
+@media #{$lrg-down} {
 
   .colLrg1{
     width: 8.3333%;
@@ -192,7 +192,7 @@
   }
 }
 
-@media #{med-down} {
+@media #{$med-down} {
 
   .colMed1{
     width: 8.3333%;
