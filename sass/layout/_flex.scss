@@ -27,152 +27,217 @@
   justify-content: flex-end;
 }
 
-@media #{$xlrg-down} {
-  .flex_xlrg_row {
+
+  .flex_xLrg_row {
+    @media #{$xlrg-down} {
     flex-direction: row;
   }
+  }
 
-  .flex_xlrg_rowReverse {
+  .flex_xLrg_rowReverse {
+    @media #{$xlrg-down} {
     flex-direction: row-reverse;
   }
-
-  .flex_xlrg_column {
-    flex-direction: column;
   }
 
-  .flex_xlrg_columnReverse {
+  .flex_xLrg_column {
+    @media #{$xlrg-down} {
+      flex-direction: column;
+    }
+  }
+
+  .flex_xLrg_columnReverse {
+    @media #{$xlrg-down} {
     flex-direction: column-reverse;
   }
+  }
 
-  .justifyContent_xlrg_spaceBetween {
+  .justifyContent_xLrg_spaceBetween {
+    @media #{$xlrg-down} {
     justify-content: space-between;
   }
-
-  .justifyContent_xlrg_center {
-    justify-content: center;
   }
 
-  .justifyContent_xlrg_flexEnd {
+  .justifyContent_xLrg_center {
+    @media #{$xlrg-down} {
+    justify-content: center;
+  }
+  }
+
+  .justifyContent_xLrg_flexEnd {
+    @media #{$xlrg-down} {
     justify-content: flex-end;
   }
 }
 
-@media #{$lrg-down} {
+
   .flex_lrg_row {
+    @media #{$lrg-down} {
     flex-direction: row;
+  }
   }
 
   .flex_lrg_rowReverse {
+    @media #{$lrg-down} {
     flex-direction: row-reverse;
+  }
   }
 
   .flex_lrg_column {
+    @media #{$lrg-down} {
     flex-direction: column;
+  }
   }
 
   .flex_lrg_columnReverse {
+    @media #{$lrg-down} {
     flex-direction: column-reverse;
+  }
   }
 
   .justifyContent_lrg_spaceBetween {
+    @media #{$lrg-down} {
     justify-content: space-between;
+  }
   }
 
   .justifyContent_lrg_center {
+    @media #{$lrg-down} {
     justify-content: center;
+  }
   }
 
   .justifyContent_lrg_flexEnd {
+    @media #{$lrg-down} {
     justify-content: flex-end;
   }
 }
 
-@media #{$med-down} {
+
   .flex_med_row {
+    @media #{$med-down} {
     flex-direction: row;
+  }
   }
 
   .flex_med_rowReverse {
+    @media #{$med-down} {
     flex-direction: row-reverse;
+  }
   }
 
   .flex_med_column {
+    @media #{$med-down} {
     flex-direction: column;
+  }
   }
 
   .flex_med_columnReverse {
+    @media #{$med-down} {
     flex-direction: column-reverse;
+  }
   }
 
   .justifyContent_med_spaceBetween {
+    @media #{$med-down} {
     justify-content: space-between;
+  }
   }
 
   .justifyContent_med_center {
+    @media #{$med-down} {
     justify-content: center;
+  }
   }
 
   .justifyContent_med_flexEnd {
+    @media #{$med-down} {
     justify-content: flex-end;
   }
 }
 
-@media #{$sml-down} {
+
   .flex_sml_row {
+    @media #{$sml-down} {
     flex-direction: row;
+  }
   }
 
   .flex_sml_rowReverse {
+    @media #{$sml-down} {
     flex-direction: row-reverse;
+  }
   }
 
   .flex_sml_column {
+    @media #{$sml-down} {
     flex-direction: column;
+  }
   }
 
   .flex_sml_columnReverse {
+    @media #{$sml-down} {
     flex-direction: column-reverse;
+  }
   }
 
   .justifyContent_sml_spaceBetween {
+    @media #{$sml-down} {
     justify-content: space-between;
+  }
   }
 
   .justifyContent_sml_center {
+    @media #{$sml-down} {
     justify-content: center;
+  }
   }
 
   .justifyContent_sml_flexEnd {
+    @media #{$sml-down} {
     justify-content: flex-end;
   }
 }
 
-@media #{$xsml-down} {
-  .flex_xsml_row {
+
+  .flex_xSml_row {
+    @media #{$xsml-down} {
     flex-direction: row;
   }
+  }
 
-  .flex_xsml_rowReverse {
+  .flex_xSml_rowReverse {
+    @media #{$xsml-down} {
     flex-direction: row-reverse;
   }
+  }
 
-  .flex_xsml_column {
+  .flex_xSml_column {
+    @media #{$xsml-down} {
     flex-direction: column;
   }
+  }
 
-  .flex_xsml_columnReverse {
+  .flex_xSml_columnReverse {
+    @media #{$xsml-down} {
     flex-direction: column-reverse;
   }
+  }
 
-  .justifyContent_xsml_spaceBetween {
+  .justifyContent_xSml_spaceBetween {
+    @media #{$xsml-down} {
     justify-content: space-between;
   }
-
-  .justifyContent_xsml_center {
-    justify-content: center;
   }
 
-  .justifyContent_xsml_flexEnd {
+  .justifyContent_xSml_center {
+    @media #{$xsml-down} {
+    justify-content: center;
+  }
+  }
+
+  .justifyContent_xSml_flexEnd {
+    @media #{$xsml-down} {
     justify-content: flex-end;
   }
 }
